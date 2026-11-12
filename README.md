@@ -36,27 +36,27 @@ An end-to-end portfolio project exploring Brazilian e-commerce sales, delivery p
 ### 1. Executive Overview
 Delivered orders, product sales, customer ratings, delivery delays, sales trend, order status mix, leading categories and customer states.
 
-![Executive overview](screenshots/01_executive_overview.png)
+![Executive overview](01_executive_overview.png)
 
 ### 2. Delivery Performance
 Late-order count and rate, average delivery and delay times, state-level comparisons, monthly late-delivery trend and states with the most late orders.
 
-![Delivery performance](screenshots/02_delivery_performance.png)
+![Delivery performance](02_delivery_performance.png)
 
 ### 3. Customer Experience
 Review distribution, average ratings for late vs on-time deliveries, highly rated product categories and customer satisfaction trend.
 
-![Customer experience](screenshots/03_customer_experience.png)
+![Customer experience](03_customer_experience.png)
 
 ### 4. Sales & Product Insights
 Product sales, delivered order count, average order value, units sold and top categories, sellers, states and products.
 
-![Sales and product insights](screenshots/04_sales_product_insights.png)
+![Sales and product insights](04_sales_product_insights.png)
 
 ### Data model
 Relationships across orders, order items, products, sellers, customers, payments, reviews and category translations. Different table grains matter: an order can contain multiple items, payments or reviews.
 
-![Power BI data model](screenshots/05_data_model.png)
+![Power BI data model](05_data_model.png)
 
 ## Key findings
 
@@ -93,14 +93,11 @@ olist-ecommerce-analytics/
 │   ├── Olist_SQL_2.sql
 │   ├── Olist_SQL_3.sql
 │   └── Olist_SQL_4.sql
-├── powerbi/
-│   └── Olist_Ecommerce_Analytics.pbix
-└── screenshots/
-    ├── 01_executive_overview.png
-    ├── 02_delivery_performance.png
-    ├── 03_customer_experience.png
-    ├── 04_sales_product_insights.png
-    └── 05_data_model.png
+├── 01_executive_overview.png
+├── 02_delivery_performance.png
+├── 03_customer_experience.png
+├── 04_sales_product_insights.png
+└── 05_data_model.png
 ```
 
 ## How to explore
@@ -108,7 +105,7 @@ olist-ecommerce-analytics/
 1. Download the [public Brazilian e-commerce dataset by Olist on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 2. Create a MySQL schema named `olist_analysis` and load the relevant CSV tables.
 3. Review the SQL scripts in [`sql/`](sql/) for import examples and analysis queries.
-4. Open [`Olist_Ecommerce_Analytics.pbix`](powerbi/Olist_Ecommerce_Analytics.pbix) in Power BI Desktop.
+4. Open `Olist_Ecommerce_Analytics.pbix` (not uploaded yet; the GitHub browser uploader rejects files above 25 MB) in Power BI Desktop.
 5. If needed, update the MySQL data-source path and credentials in Power BI Desktop. This PBIX was developed against a **local MySQL database**; a connection refresh will not work on a new computer until its MySQL data source is configured.
 
 **Reproducibility note:** The SQL folder contains working-session scripts and examples, not a complete automated database setup or one-click ETL pipeline. Import scripts require dataset paths to be adapted to your environment. The public Olist CSV data is **not redistributed** in this repository.
